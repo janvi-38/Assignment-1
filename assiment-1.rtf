@@ -1,0 +1,1390 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033\deflangfe1033{\fonttbl{\f0\fnil Consolas;}{\f1\fmodern\fprq1\fcharset0 Consolas;}{\f2\fswiss\fprq2\fcharset0 Calibri;}{\f3\fnil\fcharset0 Consolas;}}
+{\colortbl ;\red0\green128\blue0;\red0\green0\blue255;\red43\green145\blue175;\red163\green21\blue21;}
+{\*\generator Riched20 10.0.19041}{\*\mmathPr\mdispDef1\mwrapIndent1440 }\viewkind4\uc1 
+\pard\nowidctlpar\sa200\sl276\slmult1\f0\fs19\lang9\par
+\cf1\fs24 /*1. Write a C# Sharp program to print Hello and your name in a\cf0\par
+\cf1 separate line. Expected Output : Hello: Atmiya Students*/\cf0\par
+\par
+\par
+\cf2 using\cf0  System;\par
+\cf2 using\cf0  System.Collections.Generic;\par
+\cf2 using\cf0  System.Linq;\par
+\cf2 using\cf0  System.Text;\par
+\par
+\cf2 namespace\cf0  ConsoleApplication1\par
+\{\par
+    \cf2 class\cf0  \cf3 Program\cf0\par
+    \{\par
+        \cf2 static\cf0  \cf2 void\cf0  Main(\cf2 string\cf0 [] args)\par
+        \{\par
+            \cf3 Console\cf0 .WriteLine(\cf4 "Hello"\cf0 );\par
+            \cf3 Console\cf0 .WriteLine(\cf4 "dhameliya janvi"\cf0 );\par
+        \}\par
+    \}\par
+\}\par
+\cf1 /*2. Write a C# Sharp program to print the sum of two numbers.*/\cf0\par
+\par
+\cf2 using\cf0  System;\par
+\cf2 using\cf0  System.Collections.Generic;\par
+\cf2 using\cf0  System.Linq;\par
+\cf2 using\cf0  System.Text;\par
+\par
+\cf2 namespace\cf0  ConsoleApplication1\par
+\{\par
+    \cf2 class\cf0  \cf3 Program\cf0\par
+    \{\par
+        \cf2 static\cf0  \cf2 void\cf0  Main(\cf2 string\cf0 [] args)\par
+        \{\par
+           \cf2 int\cf0  i = 10, j = 5;\par
+           \cf3 Console\cf0 .WriteLine(\cf4 "i+j=\{0\}"\cf0 , i + j);\par
+        \}\par
+    \}\par
+\}\par
+\par
+\cf1 /*3. Write a C# Sharp program to print the result of dividing two\cf0\par
+\cf1 numbers.*/\cf0\par
+\par
+\cf2 using\cf0  System;\par
+\cf2 using\cf0  System.Collections.Generic;\par
+\cf2 using\cf0  System.Linq;\par
+\cf2 using\cf0  System.Text;\par
+\par
+\cf2 namespace\cf0  ConsoleApplication1\par
+\{\par
+    \cf2 class\cf0  \cf3 Program\cf0\par
+    \{\par
+        \cf2 static\cf0  \cf2 void\cf0  Main(\cf2 string\cf0 [] args)\par
+        \{\par
+           \cf2 int\cf0  i = 10, j = 5;\par
+           \cf3 Console\cf0 .WriteLine(\cf4 "i/j=\{0\}"\cf0 , i / j);\par
+        \}\par
+    \}\par
+\}\par
+\par
+\cf1 /*4. Write a C# Sharp program to print the result of the specified\cf0\par
+\cf1 operations. Test data:\cf0\par
+\cf1\u-3913? -1 + 4 * 6 \u-3913? ( 35+ 5 ) % 7 \u-3913? 14 + -4 * 6 / 11 \u-3913? 2 + 15 / 6 * 1 - 7 %\cf0\par
+\cf1 2*/\cf0\par
+\par
+\cf2 using\cf0  System;\par
+\cf2 using\cf0  System.Collections.Generic;\par
+\cf2 using\cf0  System.Linq;\par
+\cf2 using\cf0  System.Text;\par
+\par
+\cf2 namespace\cf0  ConsoleApplication1\par
+\{\par
+    \cf2 class\cf0  \cf3 Program\cf0\par
+    \{\par
+        \cf2 static\cf0  \cf2 void\cf0  Main(\cf2 string\cf0 [] args)\par
+        \{\par
+            \cf2 int\cf0  i = -1 + 4 * 6,\par
+            j = (35 + 5) % 7,\par
+            k = 14 + -4 * 6 / 11,\par
+            l = 2 + 15 / 6 * 1 - 7 % 2;\par
+            \cf3 Console\cf0 .WriteLine(i);\par
+            \cf3 Console\cf0 .WriteLine(j);\par
+            \cf3 Console\cf0 .WriteLine(k);\par
+            \cf3 Console\cf0 .WriteLine(l);\par
+        \}\par
+    \}\par
+\}\par
+\cf1 /*\cf0\par
+\cf1 5. Write a C# Sharp program to swap two numbers. Test Data: Input\cf0\par
+\cf1 the First Number : 5 Input the Second Number : 6 Expected\cf0\par
+\cf1 Output: After Swapping : First Number : 6 Second Number : 5*/\cf0\par
+\cf2 using\cf0  System;\par
+\cf2 using\cf0  System.Collections.Generic;\par
+\cf2 using\cf0  System.Linq;\par
+\cf2 using\cf0  System.Text;\par
+\par
+\cf2 namespace\cf0  ConsoleApplication1\par
+\{\par
+    \cf2 class\cf0  \cf3 Program\cf0\par
+    \{\par
+        \cf2 static\cf0  \cf2 void\cf0  Main(\cf2 string\cf0 [] args)\par
+        \{\par
+            \cf2 int\cf0  i = 5, j = 6, k=0;\par
+            \cf3 Console\cf0 .WriteLine(\cf4 "Before Swapping..."\cf0 );\par
+            \cf3 Console\cf0 .WriteLine(\cf4 "i=\{0\}"\cf0 ,i);\par
+            \cf3 Console\cf0 .WriteLine(\cf4 "j=\{0\}"\cf0 , j);\par
+            \cf3 Console\cf0 .WriteLine(\cf4 "After Swapping..."\cf0 );\par
+            k = i;\par
+            i = j;\par
+            j = k;\par
+            \cf3 Console\cf0 .WriteLine(\cf4 "i=\{0\}"\cf0 , i);\par
+            \cf3 Console\cf0 .WriteLine(\cf4 "j=\{0\}"\cf0 , j);\par
+        \}\par
+    \}\par
+\}\par
+\par
+\cf1 /*\cf0\par
+\cf1 6. Write a C# Sharp program to print the output of multiplication of\cf0\par
+\cf1 three numbers which will be entered by the user. Test Data: Input\cf0\par
+\cf1 the first number to multiply: 2 Input the second number to\cf0\par
+\cf1 multiply: 3 Input the third number to multiply: 6 Expected Output:\cf0\par
+\cf1 2 x 3 x 6 = 36*/\cf0\par
+\cf2 using\cf0  System;\par
+\cf2 using\cf0  System.Collections.Generic;\par
+\cf2 using\cf0  System.Linq;\par
+\cf2 using\cf0  System.Text;\par
+\par
+\cf2 namespace\cf0  ConsoleApplication1\par
+\{\par
+    \cf2 class\cf0  \cf3 Program\cf0\par
+    \{\par
+        \cf2 static\cf0  \cf2 void\cf0  Main(\cf2 string\cf0 [] args)\par
+        \{\par
+            \cf2 int\cf0  a, b, c;\par
+        System.\cf3 Console\cf0 .WriteLine(\cf4 "Enter First Number:"\cf0 );\par
+        a = \cf3 Convert\cf0 .ToInt32(\cf3 Console\cf0 .ReadLine());\par
+        System.\cf3 Console\cf0 .WriteLine(\cf4 "Enter Second Number:"\cf0 );\par
+        b = \cf3 Convert\cf0 .ToInt32(\cf3 Console\cf0 .ReadLine());\par
+        System.\cf3 Console\cf0 .WriteLine(\cf4 "Enter Third Number:"\cf0 );\par
+        c = \cf3 Convert\cf0 .ToInt32(\cf3 Console\cf0 .ReadLine());\par
+        \cf2 int\cf0  res = a * b * c;\par
+        \cf3 Console\cf0 .WriteLine(\cf4 "multiplication of 3 numberis=\{0\}"\cf0 ,res);\par
+        \}\par
+    \}\par
+\}\par
+\cf1 /*7. Write a C# Sharp program to print on screen the output of adding, subtracting, multiplying and dividing of two numbers which will be entered by the user. \cf0\par
+\cf1 Test Data: \cf0\par
+\cf1 Input the first number: 25 \cf0\par
+\cf1 Input the second number: 4 \cf0\par
+\cf1 Expected Output:\cf0\par
+\cf1 25 + 4 = 29 \cf0\par
+\cf1 25 - 4 = 21 \cf0\par
+\cf1 25 x 4 = 100 \cf0\par
+\cf1 25 / 4 = 6 \cf0\par
+\cf1 25mod 4 = 1*/\cf0\par
+\cf2\f1 using\cf0  System;\par
+\cf2 namespace\cf0  ConsoleApplication1\par
+\{\par
+    \cf2 class\cf0  \cf3 Program\cf0\par
+    \{\par
+        \cf2 static\cf0  \cf2 void\cf0  Main(\cf2 string\cf0 [] args)\par
+        \{\par
+            \cf2 int\cf0  x = 25;\par
+            \cf2 int\cf0  y = 4;\par
+            System.\cf3 Console\cf0 .WriteLine(\cf4 "Addition :"\cf0 );\par
+            \cf2 double\cf0  a = x + y;\par
+            System.\cf3 Console\cf0 .WriteLine(a);\par
+\par
+            System.\cf3 Console\cf0 .WriteLine(\cf4 "Subtraction :"\cf0 );\par
+            \cf2 double\cf0  b = x - y;\par
+            System.\cf3 Console\cf0 .WriteLine(b);\par
+\par
+            System.\cf3 Console\cf0 .WriteLine(\cf4 "Multiplication :"\cf0 );\par
+            \cf2 double\cf0  c = x * y;\par
+            System.\cf3 Console\cf0 .WriteLine(c);\par
+\par
+            System.\cf3 Console\cf0 .WriteLine(\cf4 "Division :"\cf0 );\par
+            \cf2 double\cf0  d = x / y;\par
+            System.\cf3 Console\cf0 .WriteLine(d);\par
+\par
+            System.\cf3 Console\cf0 .WriteLine(\cf4 "Module :"\cf0 );\par
+            \cf2 double\cf0  e = x % y;\par
+            System.\cf3 Console\cf0 .WriteLine(e);\par
+        \}\par
+    \}\par
+\}\par
+\cf1\f0 /*8. Write a C# Sharp program that takes a number as input and print its multiplication table.\cf0\par
+\cf1  Test Data: \cf0\par
+\cf1 Enter the number: 5\cf0\par
+\cf1  Expected Output: 5 * 0 = 0\cf0\par
+\cf1  5 * 1 = 5 \cf0\par
+\cf1 5 * 2 = 10 \cf0\par
+\cf1 5 * 3 = 15 .... \cf0\par
+\cf1 5 * 10 = 50 */\par
+\cf2\f1 using\cf0  System;\par
+\cf2 namespace\cf0  ConsoleApplication1\par
+\{\par
+    \cf2 class\cf0  \cf3 CodeFile1\cf0\par
+    \{\par
+        \cf2 static\cf0  \cf2 void\cf0  Main(\cf2 string\cf0 [] args)\par
+        \{\par
+            \cf2 int\cf0  a;\par
+            System.\cf3 Console\cf0 .WriteLine(\cf4 "Enter Number: "\cf0 );\par
+            a = \cf3 Convert\cf0 .ToInt32(\cf3 Console\cf0 .ReadLine());\par
+            \cf2 for\cf0  (\cf2 int\cf0  i = 0; i <= 10; i++)\par
+            \{\par
+                System.\cf3 Console\cf0 .WriteLine(a + \cf4 " * "\cf0  + i + \cf4 " = "\cf0  + (a * i));\par
+            \}\par
+            System.\cf3 Console\cf0 .WriteLine();\par
+        \}\par
+    \}\par
+\}\par
+
+\pard\cf1\f0 /*9. Write a C# Sharp program that takes four numbers as input to calculate and print the average. \cf0\par
+\cf1 Test Data:\cf0\par
+\cf1 Enter the First number: 10 \cf0\par
+\cf1 Enter the Second number: 15 \cf0\par
+\cf1 Enter the third number: 20 \cf0\par
+\cf1 Enter the four number: 30 \cf0\par
+\cf1 Expected Output:\cf0\par
+\cf1 The average of 10 , 15 , 20 , 30 is: 18\cf0\par
+\cf1 75/4\cf0\par
+\cf1 */\fs19\par
+
+\pard\widctlpar\cf2\f1\fs24\lang1033 using\cf0  System;\par
+\cf2 namespace\cf0  ConsoleApplication2\par
+\{\par
+    \cf2 class\cf0  \cf3 Program\cf0\par
+    \{\par
+        \cf2 static\cf0  \cf2 void\cf0  Main(\cf2 string\cf0 [] args)\par
+        \{\par
+            \cf2 int\cf0  a, b, c, d, x, y;\par
+            System.\cf3 Console\cf0 .WriteLine(\cf4 "Enter first no : "\cf0 );\par
+            a = \cf3 Convert\cf0 .ToInt32(\cf3 Console\cf0 .ReadLine());\par
+            System.\cf3 Console\cf0 .WriteLine(\cf4 "Enter second no : "\cf0 );\par
+            b = \cf3 Convert\cf0 .ToInt32(\cf3 Console\cf0 .ReadLine());\par
+            System.\cf3 Console\cf0 .WriteLine(\cf4 "Enter third no : "\cf0 );\par
+            c = \cf3 Convert\cf0 .ToInt32(\cf3 Console\cf0 .ReadLine());\par
+            System.\cf3 Console\cf0 .WriteLine(\cf4 "Enter fourth no : "\cf0 );\par
+            d = \cf3 Convert\cf0 .ToInt32(\cf3 Console\cf0 .ReadLine());\par
+\par
+            x = a + b + c + d;\par
+            y = x / 4;\par
+\par
+            System.\cf3 Console\cf0 .WriteLine(\cf4 "total sum:=\{0\}"\cf0 , x);\par
+            System.\cf3 Console\cf0 .WriteLine(\cf4 "Average of 4 no : \{0\}"\cf0 , y);\par
+        \}\par
+    \}\par
+\}\par
+\par
+\fs19\par
+\par
+\cf1\fs24 /*10. Write a C# Sharp program to that takes three numbers(x,y,z) as input and print the output of \cf0\par
+\cf1 (x+y).z and x.y + y.z. \cf0\par
+\cf1 Test Data:\cf0\par
+\cf1 Enter first number - 5\cf0\par
+\cf1 Enter second number - 6\cf0\par
+\cf1 Enter third number - 7\cf0\par
+\cf1 Expected Output:\cf0\par
+\cf1 Result of specified numbers 5, 6 and 7, (x+y).z is 77 and x.y + y.z is 72*/\cf0\par
+\par
+\cf2 using\cf0  System;\par
+\cf2 namespace\cf0  ConsoleApplication2\par
+\{\par
+    \cf2 class\cf0  \cf3 Program\cf0\par
+    \{\par
+        \cf2 static\cf0  \cf2 void\cf0  Main(\cf2 string\cf0 [] args)\par
+        \{\par
+            \cf2 int\cf0  x, y, z;\par
+            System.\cf3 Console\cf0 .WriteLine(\cf4 "Enter first no : "\cf0 );\par
+            x = \cf3 Convert\cf0 .ToInt32(\cf3 Console\cf0 .ReadLine());\par
+            System.\cf3 Console\cf0 .WriteLine(\cf4 "Enter second no : "\cf0 );\par
+            y = \cf3 Convert\cf0 .ToInt32(\cf3 Console\cf0 .ReadLine());\par
+            System.\cf3 Console\cf0 .WriteLine(\cf4 "Enter third no : "\cf0 );\par
+            z = \cf3 Convert\cf0 .ToInt32(\cf3 Console\cf0 .ReadLine());\par
+\par
+            \cf2 double\cf0  a = (x + y) * z;\par
+            \cf2 double\cf0  b = x * y + y * z;\par
+\par
+            System.\cf3 Console\cf0 .WriteLine(\cf4 "a = (x + y) * z=\{0\}"\cf0 ,a);\par
+            System.\cf3 Console\cf0 .WriteLine(\cf4 "b = x * y + y * z=\{0\}"\cf0 , b);\par
+        \}\par
+    \}\par
+\}\par
+\par
+\cf1 /*\cf0\par
+\cf1 11. Write a C# Sharp program that takes an age (for example 20) as input and prints something \cf0\par
+\cf1 as "You look older than 20".\cf0\par
+\cf1 Test Data:\cf0\par
+\cf1 Enter your age \endash  25\cf0\par
+\cf1 Expected Output:\cf0\par
+\cf1 You look older than 25\cf0\par
+\cf1 */\cf0\par
+\par
+\cf2 using\cf0  System;\par
+\cf2 namespace\cf0  ConsoleApplication2\par
+\{\par
+    \cf2 class\cf0  \cf3 Program\cf0\par
+    \{\par
+        \cf2 static\cf0  \cf2 void\cf0  Main(\cf3 String\cf0 [] args)\par
+        \{\par
+            \cf2 int\cf0  age;\par
+            System.\cf3 Console\cf0 .WriteLine(\cf4 "Enter your age"\cf0 );\par
+            age = \cf3 Convert\cf0 .ToInt32(\cf3 Console\cf0 .ReadLine());\par
+\par
+            System.\cf3 Console\cf0 .WriteLine(\cf4 "you look older than"\cf0  + age);\par
+        \}\par
+    \}\par
+\}\par
+\par
+\par
+\cf1 /*\cf0\par
+\cf1 12. Write a C# program to that takes a number as input and display it four times in a row \cf0\par
+\cf1 (separated by blank spaces), and then four times in the next row, with no separation. You should \cf0\par
+\cf1 do it two times: Use Console. Write and then use \{0\}. \cf0\par
+\cf1 Test Data:\cf0\par
+\cf1 Enter a digit: 25 \cf0\par
+\cf1 Expected Output:\cf0\par
+\cf1 25 25 25 25 \cf0\par
+\cf1 25252525 \cf0\par
+\cf1 25 25 25 25 \cf0\par
+\cf1 25252525\cf0\par
+\cf1 */\cf0\par
+\cf2 using\cf0  System;\par
+\cf2 class\cf0  \cf3 Program\cf0\par
+\{\par
+    \cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  Main()\par
+    \{\par
+        \cf2 int\cf0  num;\par
+\par
+        \cf3 Console\cf0 .WriteLine(\cf4 "Enter a digit: "\cf0 );\par
+        num = \cf3 Convert\cf0 .ToInt32(\cf3 Console\cf0 .ReadLine());\par
+\par
+        \cf1 // 25 25 25 25\cf0\par
+        \cf3 Console\cf0 .Write(num);\par
+        \cf3 Console\cf0 .Write(\cf4 " "\cf0 );\par
+        \cf3 Console\cf0 .Write(num);\par
+        \cf3 Console\cf0 .Write(\cf4 " "\cf0 );\par
+        \cf3 Console\cf0 .Write(num);\par
+        \cf3 Console\cf0 .Write(\cf4 " "\cf0 );\par
+        \cf3 Console\cf0 .Write(num);\par
+        \cf3 Console\cf0 .WriteLine();\par
+\par
+        \cf1 // 25252525\cf0\par
+        \cf3 Console\cf0 .Write(num);\par
+        \cf3 Console\cf0 .Write(num);\par
+        \cf3 Console\cf0 .Write(num);\par
+        \cf3 Console\cf0 .WriteLine(num);\par
+        \cf3 Console\cf0 .WriteLine();\par
+\par
+        \cf1 // 25 25 25 25\cf0\par
+        \cf3 Console\cf0 .WriteLine(\cf4 "\{0\} \{0\} \{0\} \{0\}"\cf0 , num);\par
+\par
+        \cf1 // 25252525\cf0\par
+        \cf3 Console\cf0 .WriteLine(\cf4 "\{0\}\{0\}\{0\}\{0\}"\cf0 , num);\par
+    \}\par
+\}\par
+\par
+\cf1 /*13. Write a C# program that takes a number as input and then displays a rectangle of 3 columns \cf0\par
+\cf1 wide and 5 rows tall using that digit. \cf0\par
+\cf1 Test Data:\cf0\par
+\cf1 Enter a number: 5 \cf0\par
+\cf1 Expected Output:\cf0\par
+\cf1 555 \cf0\par
+\cf1 5 5\cf0\par
+\cf1 5 5 \cf0\par
+\cf1 5 5 \cf0\par
+\cf1 555*/\cf0\par
+\par
+\cf2 using\cf0  System;\par
+\cf2 namespace\cf0  ConsoleApplication2\par
+\{\par
+    \cf2 public\cf0  \cf2 class\cf0  \cf3 Program\cf0\par
+    \{\par
+        \cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  Main(\cf3 String\cf0 [] args)\par
+        \{\par
+         \cf2 int\cf0  x;\par
+         \par
+         \cf3 Console\cf0 .Write(\cf4 "Enter a number: "\cf0 );\par
+         x=\cf3 Convert\cf0 .ToInt32(\cf3 Console\cf0 .ReadLine());\par
+     \par
+         \cf3 Console\cf0 .WriteLine(\cf4 "\{0\}\{0\}\{0\}"\cf0 ,x);\par
+         \cf3 Console\cf0 .WriteLine(\cf4 "\{0\} \{0\}"\cf0 ,x);\par
+         \cf3 Console\cf0 .WriteLine(\cf4 "\{0\} \{0\}"\cf0 ,x);\par
+         \cf3 Console\cf0 .WriteLine(\cf4 "\{0\} \{0\}"\cf0 ,x);\par
+         \cf3 Console\cf0 .WriteLine(\cf4 "\{0\}\{0\}\{0\}"\cf0 ,x);\par
+        \}\par
+     \}\par
+\}\par
+\f2\lang9\par
+\cf1\f1\lang1033 /*\cf0\par
+\cf1 14. Write a C# program to convert from celsius degrees to Kelvin and Fahrenheit. \cf0\par
+\cf1 Test Data:\cf0\par
+\cf1 Enter the amount of celsius: 30\cf0\par
+\cf1 Expected Output:\cf0\par
+\cf1 Kelvin = 303 ( Kelvin = Celsius + 273.15)\cf0\par
+\cf1 Fahrenheit = 86 (multiply by 1.8 (or 9/5) and add 32)\cf0\par
+\cf1 */\cf0\par
+\par
+\cf2 using\cf0  System;\par
+\cf2 namespace\cf0  ConsoleApplication2\par
+\{\par
+    \cf2 public\cf0  \cf2 class\cf0  \cf3 Program\cf0\par
+    \{\par
+        \cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  Main(\cf3 String\cf0 [] args)\par
+        \{\par
+            System.\cf3 Console\cf0 .WriteLine(\cf4 "Enter Celsius degree : "\cf0 );\par
+            \cf2 int\cf0  Celsius = \cf3 Convert\cf0 .ToInt32(\cf3 Console\cf0 .ReadLine());\par
+\par
+            System.\cf3 Console\cf0 .WriteLine(\cf4 "Kelvin : \{0\}"\cf0 , Celsius + 273.15);\par
+            System.\cf3 Console\cf0 .WriteLine(\cf4 "Fahrenheit : \{0\}"\cf0 , Celsius * 1.8 + 32);\par
+        \}\par
+     \}\par
+\}\par
+\cf1\par
+\par
+/*\cf0\par
+\cf1 15. Write a C# program remove specified a character from a non-empty string using index of a \cf0\par
+\cf1 character.\cf0\par
+\cf1 Test Data:\cf0\par
+\cf1 Atmiya University\cf0\par
+\cf1 Sample Output:\cf0\par
+\cf1 Atiya University\cf0\par
+\cf1 Atmiya niversity\cf0\par
+\par
+\cf1 */\cf0\par
+\par
+\par
+\cf2 using\cf0  System;\par
+\cf2 namespace\cf0  ConsoleApplication2\par
+\{\par
+    \cf2 public\cf0  \cf2 class\cf0  \cf3 Program\cf0\par
+    \{\par
+        \cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  Main(\cf3 String\cf0 [] args)\par
+        \{\par
+            \par
+            \cf3 Console\cf0 .WriteLine(remove_char(\cf4 "Atmiya University"\cf0 , 3));\par
+            \cf3 Console\cf0 .WriteLine(remove_char(\cf4 "Atmiya University"\cf0 , 8));     \par
+        \}    \par
+        \cf2 public\cf0  \cf2 static\cf0  \cf2 string\cf0  remove_char(\cf2 string\cf0  str, \cf2 int\cf0  n)\par
+        \{\par
+             \cf2 return\cf0  str.Remove(n, 1);\par
+        \}\par
+        \par
+     \}\par
+\}\par
+
+\pard\nowidctlpar\sa200\sl276\slmult1\f2\lang9\par
+
+\pard\widctlpar\cf1\f1\lang1033 /*\cf0\par
+\cf1 16. Write a C# program to create a new string from a given string (length 1 or more) with the \cf0\par
+\cf1 first character added at the front and back.\cf0\par
+\cf1 Sample Output:\cf0\par
+\cf1 Input a string : The quick brown fox jumps over the lazy dog. \cf0\par
+\cf1 TThe quick brown fox jumps over the lazy dog.T\cf0\par
+\cf1 */\cf0\par
+\par
+\par
+\par
+\cf2 using\cf0  System;\par
+\cf2 namespace\cf0  ConsoleApplication2\par
+\{\par
+    \cf2 public\cf0  \cf2 class\cf0  \cf3 Program\cf0\par
+    \{\par
+        \cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  Main(\cf3 String\cf0 [] args)\par
+        \{\par
+            \cf2 string\cf0  str;\par
+            \cf2 int\cf0  l = 0;\par
+            \cf3 Console\cf0 .Write(\cf4 "Input a string : "\cf0 );\par
+            str = \cf3 Console\cf0 .ReadLine();\par
+            \cf2 if\cf0  (str.Length >= 1)\par
+            \{\par
+                \cf2 var\cf0  s = str.Substring(0, 1);\par
+                \cf3 Console\cf0 .WriteLine(s + str + s);\par
+            \}\par
+\par
+        \}\par
+     \}\par
+\}\par
+
+\pard\nowidctlpar\sa200\sl276\slmult1\f2\lang9\par
+\par
+\par
+
+\pard\widctlpar\cf1\f1\lang1033 /*\cf0\par
+\cf1 17. Write a C# program to check two given integers and return true if one is negative and one is \cf0\par
+\cf1 positive.\cf0\par
+\cf1 Sample Output:\cf0\par
+\cf1 Input first integer:\cf0\par
+\cf1 -5 \cf0\par
+\cf1 Input second integer: \cf0\par
+\cf1 25 \cf0\par
+\cf1 Check if one is negative and one is positive: \cf0\par
+\cf1 True\cf0\par
+\cf1 */\cf0\par
+\par
+\par
+\par
+\cf2 using\cf0  System;\par
+\cf2 namespace\cf0  ConsoleApplication2\par
+\{\par
+    \cf2 public\cf0  \cf2 class\cf0  \cf3 Program\cf0\par
+    \{\par
+        \cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  Main(\cf3 String\cf0 [] args)\par
+        \{\par
+            System.\cf3 Console\cf0 .WriteLine(\cf4 "Enter 1st Integer : "\cf0 );\par
+            \cf2 int\cf0  a = \cf3 Convert\cf0 .ToInt32(\cf3 Console\cf0 .ReadLine());\par
+            System.\cf3 Console\cf0 .WriteLine(\cf4 "Enter 2nd Integer : "\cf0 );\par
+            \cf2 int\cf0  b = \cf3 Convert\cf0 .ToInt32(\cf3 Console\cf0 .ReadLine());\par
+\par
+            \cf2 if\cf0  ((a < 0 && b > 0) || (a > 0 && b < 0))\par
+            \{\par
+                System.\cf3 Console\cf0 .WriteLine(\cf4 "True"\cf0 );\par
+            \}\par
+\par
+        \}\par
+     \}\par
+\}\par
+\par
+\cf1 /*\cf0\par
+\cf1 18. Write a C# program to compute the sum of two given integers, if two values are equal then \cf0\par
+\cf1 return the triple of their sum\cf0\par
+\cf1 */\cf0\par
+\par
+\par
+\cf2 using\cf0  System;\par
+\cf2 namespace\cf0  ConsoleApplication2\par
+\{\par
+    \cf2 public\cf0  \cf2 class\cf0  \cf3 Program\cf0\par
+    \{\par
+        \cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  Main(\cf3 String\cf0 [] args)\par
+        \{\par
+            \cf3 Console\cf0 .WriteLine(SumTriple(2, 2));\par
+            \cf3 Console\cf0 .WriteLine(SumTriple(12, 10));\par
+            \cf3 Console\cf0 .WriteLine(SumTriple(-5, 2));\par
+        \}\par
+        \cf2 public\cf0  \cf2 static\cf0  \cf2 int\cf0  SumTriple(\cf2 int\cf0  a, \cf2 int\cf0  b)\par
+        \{\par
+            \cf2 return\cf0  a == b ? (a + b) * 3 : a + b;\par
+        \}\par
+     \}\par
+\}\par
+\par
+
+\pard\nowidctlpar\sa200\sl276\slmult1\f2\lang9\par
+
+\pard\widctlpar\cf1\f1\lang1033 /*\cf0\par
+\cf1 19. Write a C# program to get the absolute value of the difference between two given numbers. \cf0\par
+\cf1 Return double the absolute value of the difference if the first number is greater than second \cf0\par
+\cf1 number.\cf0\par
+\cf1 */\cf0\par
+\par
+\par
+\par
+\cf2 using\cf0  System;\par
+\cf2 namespace\cf0  ConsoleApplication2\par
+\{\par
+    \cf2 public\cf0  \cf2 class\cf0  \cf3 Program\cf0\par
+    \{\par
+        \cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  Main(\cf3 String\cf0 [] args)\par
+        \{\par
+            \cf3 Console\cf0 .WriteLine(result(13, 40));\par
+            \cf3 Console\cf0 .WriteLine(result(50, 21));\par
+            \cf3 Console\cf0 .WriteLine(result(0, 23));\par
+        \}\par
+\par
+        \cf2 public\cf0  \cf2 static\cf0  \cf2 int\cf0  result(\cf2 int\cf0  a, \cf2 int\cf0  b)\par
+        \{\par
+            \cf2 if\cf0  (a > b)\par
+            \{\par
+                \cf2 return\cf0  (a - b) * 2;\par
+            \}\par
+            \cf2 return\cf0  b - a;\par
+        \}\par
+     \}\par
+\}\par
+
+\pard\nowidctlpar\sa200\sl276\slmult1\f2\lang9\par
+
+\pard\widctlpar\cf1\f1\lang1033 /*\cf0\par
+\cf1 20. Write a C# program to check the sum of the two given integers and return true if one of the \cf0\par
+\cf1 integer is 20 or if their sum is 20\cf0\par
+\cf1 */\cf0\par
+\par
+\par
+\cf2 using\cf0  System;\par
+\cf2 namespace\cf0  ConsoleApplication2\par
+\{\par
+    \cf2 public\cf0  \cf2 class\cf0  \cf3 Program\cf0\par
+    \{\par
+        \cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  Main(\cf3 String\cf0 [] args)\par
+        \{\par
+            \cf2 int\cf0  x, y;\par
+            \cf2 int\cf0  result;\par
+\par
+            \cf3 Console\cf0 .WriteLine(\cf4 "\\nInput an integer:"\cf0 );\par
+            x = \cf3 Convert\cf0 .ToInt32(\cf3 Console\cf0 .ReadLine());\par
+            \cf3 Console\cf0 .WriteLine(\cf4 "Input another integer:"\cf0 );\par
+            y = \cf3 Convert\cf0 .ToInt32(\cf3 Console\cf0 .ReadLine());\par
+            \cf3 Console\cf0 .WriteLine(x == 20 || y == 20 || (x + y == 20));\par
+        \}\par
+     \}\par
+\}\par
+
+\pard\nowidctlpar\sa200\sl276\slmult1\f2\lang9\par
+
+\pard\widctlpar\cf1\f1\lang1033 /*\cf0\par
+\cf1 21. Write a C# program to check if an given integer is within 20 of 100 or 200.\cf0\par
+\cf1 Sample Output:\cf0\par
+\cf1 Input an integer: \cf0\par
+\cf1 25 \cf0\par
+\cf1 False\cf0\par
+\cf1 */\cf0\par
+\par
+\par
+\cf2 using\cf0  System;\par
+\cf2 namespace\cf0  ConsoleApplication1\par
+\{\par
+    \cf2 class\cf0  \cf3 Program\cf0\par
+    \{\par
+        \cf2 static\cf0  \cf2 void\cf0  Main(\cf2 string\cf0 [] args)\par
+        \{\par
+            \cf3 Console\cf0 .WriteLine(\cf4 "\\nInput an integer:"\cf0 );\par
+            \cf2 int\cf0  x = \cf3 Convert\cf0 .ToInt32(\cf3 Console\cf0 .ReadLine());\par
+            \cf3 Console\cf0 .WriteLine(result(x));\par
+        \}\par
+\par
+        \cf2 public\cf0  \cf2 static\cf0  \cf2 bool\cf0  result(\cf2 int\cf0  n)\par
+        \{\par
+            \cf2 if\cf0  (n <= 100)\par
+            \{\par
+                \cf2 if\cf0 (\cf3 Math\cf0 .Abs(n - 100) <= 20 )\par
+                \cf2 return\cf0  \cf2 true\cf0 ;\par
+            \}\par
+            \cf2 else\cf0  \cf2 if\cf0  (n <= 200)\par
+            \{\par
+                \cf2 if\cf0  (\cf3 Math\cf0 .Abs(n - 200) <= 20)\par
+                \cf2 return\cf0  \cf2 true\cf0 ;\par
+            \}\par
+            \cf2 else\cf0\par
+            \{\par
+                \cf3 Console\cf0 .WriteLine(\cf4 "Enter valid number"\cf0 );\par
+                \cf2 return\cf0  \cf2 false\cf0 ;\par
+            \}\par
+            \cf2 return\cf0  \cf2 false\cf0 ;\par
+        \}\par
+    \}\par
+\}\par
+
+\pard\nowidctlpar\sa200\sl276\slmult1\f2\lang9\par
+
+\pard\widctlpar\cf1\f1\lang1033 /*\cf0\par
+\cf1 22. Write a C# program to convert a given string into lowercase.\cf0\par
+\cf1 Sample Output:\cf0\par
+\cf1 write a c# sharp program to display the following pattern using the alphabet.\cf0\par
+\cf1 */\cf0\par
+\cf2 using\cf0  System;\par
+\cf2 namespace\cf0  ConsoleApplication1\par
+\{\par
+    \cf2 class\cf0  \cf3 Program\cf0\par
+    \{\par
+        \cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  Main()\par
+        \{\par
+            \cf2 string\cf0  str = \cf4 "Write a C# Sharp Program to display the following pattern using the alphabet."\cf0 ;\par
+\par
+            \cf3 Console\cf0 .WriteLine(str.ToLower());\par
+\par
+        \}\par
+    \}\par
+\}\par
+\par
+\cf1 /*\cf0\par
+\cf1 23. Write a C# program to print the odd numbers from 1 to 99. Prints one number per line.\cf0\par
+\cf1 Sample Output:\cf0\par
+\cf1 Odd numbers from 1 to 99. Prints one number per line.\cf0\par
+\cf1 1 \cf0\par
+\cf1 3 \cf0\par
+\cf1 5 \cf0\par
+\cf1 7 \cf0\par
+\cf1 9 \cf0\par
+\cf1 ...\cf0\par
+\cf1 95\cf0\par
+\cf1 97 \cf0\par
+\cf1 99\cf0\par
+\cf1 */\cf0\par
+\cf2 using\cf0  System;\par
+\cf2 namespace\cf0  ConsoleApplication1\par
+\{\par
+    \cf2 class\cf0  \cf3 Program\cf0\par
+    \{\par
+        \cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  Main()\par
+        \{\par
+            \cf3 Console\cf0 .WriteLine(\cf4 "Odd numbers from 1 to 99. Prints one number per line."\cf0 );\par
+            \cf2 for\cf0  (\cf2 int\cf0  n = 1; n < (99 + 1); n++)\par
+            \{\par
+                \cf2 if\cf0  (n % 2 != 0)\par
+                \{\par
+                    \cf3 Console\cf0 .WriteLine(n.ToString());\par
+                \}\par
+            \}\par
+\par
+        \}\par
+    \}\par
+\}\par
+
+\pard\nowidctlpar\sa200\sl276\slmult1\f2\lang9\par
+
+\pard\widctlpar\cf1\f1\lang1033 /*\cf0\par
+\cf1 24. Write a C# program to compute the sum of the first 500 prime numbers.\cf0\par
+\cf1 Sample Output:\cf0\par
+\cf1 Sum of the first 500 prime numbers:\cf0\par
+\cf1 3682913 \cf0\par
+\cf1 */\cf0\par
+\cf2 using\cf0  System;\par
+\cf2 namespace\cf0  ConsoleApplication1\par
+\{\par
+    \cf2 class\cf0  \cf3 Program\cf0\par
+    \{\par
+        \cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  Main()\par
+        \{\par
+            \cf3 Console\cf0 .WriteLine(\cf4 "\\nSum of the first 500 prime numbers: "\cf0 );\par
+            \cf2 long\cf0  sum = 0;\par
+            \cf2 int\cf0  ctr = 0;\par
+            \cf2 int\cf0  n = 2;\par
+            \cf2 while\cf0  (ctr < 500)\par
+            \{\par
+                \cf2 if\cf0  (isPrime(n))\par
+                \{\par
+                    sum += n;\par
+                    ctr++;\par
+                \}\par
+                n++;\par
+            \}\par
+\par
+            \cf3 Console\cf0 .WriteLine(sum.ToString());\par
+\par
+        \}\par
+        \cf2 public\cf0  \cf2 static\cf0  \cf2 bool\cf0  isPrime(\cf2 int\cf0  n)\par
+        \{\par
+            \cf2 int\cf0  x = (\cf2 int\cf0 )\cf3 Math\cf0 .Floor(\cf3 Math\cf0 .Sqrt(n));\par
+\par
+            \cf2 if\cf0  (n == 1) \cf2 return\cf0  \cf2 false\cf0 ;\par
+            \cf2 if\cf0  (n == 2) \cf2 return\cf0  \cf2 true\cf0 ;\par
+\par
+            \cf2 for\cf0  (\cf2 int\cf0  i = 2; i <= x; ++i)\par
+            \{\par
+                \cf2 if\cf0  (n % i == 0) \cf2 return\cf0  \cf2 false\cf0 ;\par
+            \}\par
+\par
+            \cf2 return\cf0  \cf2 true\cf0 ;\par
+        \}\par
+      \}\par
+\par
+\}\par
+\par
+\cf1 /*\cf0\par
+\cf1 25. Write a C# program and compute the sum of the digits of an integer.\cf0\par
+\cf1 Sample Output:\cf0\par
+\cf1 Input a number(integer): 12\cf0\par
+\cf1 Sum of the digits of the said integer: 3\cf0\par
+\cf1 */\cf0\par
+\cf2 using\cf0  System;\par
+\cf2 namespace\cf0  ConsoleApplication1\par
+\{\par
+    \cf2 class\cf0  \cf3 Program\cf0\par
+    \{\par
+        \cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  Main()\par
+        \{\par
+            \cf3 Console\cf0 .Write(\cf4 "Input  a number(integer): "\cf0 );\par
+            \cf2 int\cf0  n = \cf3 Convert\cf0 .ToInt32(\cf3 Console\cf0 .ReadLine());\par
+            \cf2 int\cf0  sum = 0;\par
+            \cf2 while\cf0  (n != 0)\par
+            \{\par
+                sum= sum + (n % 10);\par
+                n = n/ 10;\par
+            \}\par
+            \cf3 Console\cf0 .WriteLine(\cf4 "Sum of the digits of the said integer: "\cf0  + sum);\par
+        \}\par
+      \}\par
+\par
+\}\par
+
+\pard\f0\par
+\cf1 /*\cf0\par
+\cf1 26. Write a C# program to reverse the words of a sentence.\cf0\par
+\cf1 Sample Output:\cf0\par
+\cf1 Original String: Display the pattern like pyramid using the alphabet.\cf0\par
+\cf1 Reverse String: alphabet. the using pyramid like pattern the Display\cf0\par
+\cf1 */\cf0\par
+\cf2 using\cf0  System;\par
+\cf1 //using System.Collections.Generic;\cf0\par
+\cf2 using\cf0  System.Linq;\par
+\cf1 //using System.Text;\cf0\par
+\par
+\cf2 namespace\cf0  ConsoleApplication1\par
+\{\par
+    \cf2 class\cf0  \cf3 Program\cf0\par
+    \{\par
+        \cf2 static\cf0  \cf2 void\cf0  Main(\cf2 string\cf0 [] args)\par
+        \{\par
+        \cf1 // original string\cf0\par
+         \cf2 string\cf0  str = \cf4 "Hello World"\cf0 ;\par
+        \cf1 // reverse the string\cf0\par
+\par
+        \cf2 string\cf0  res = \cf2 string\cf0 .Join(\cf4 " "\cf0 ,str.Split(\cf4 ' '\cf0 ).Select(s =>\cf2 new\cf0  \cf3 String\cf0 (s.Reverse().ToArray())));\par
+        \cf3 Console\cf0 .WriteLine(res);\par
+\par
+        \}\par
+    \}\par
+\}\par
+\par
+\cf1 /*\cf0\par
+\cf1 27. Write a C# program to find the size of a specified file in bytes.\cf0\par
+\cf1 Sample Output:\cf0\par
+\cf1 Size of a file: 31 \cf0\par
+\cf1 */\cf0\par
+\cf2 using\cf0  System;\par
+\cf2 using\cf0  System.Collections.Generic;\par
+\cf2 using\cf0  System.Linq;\par
+\cf2 using\cf0  System.Text;\par
+\cf2 using\cf0  System.IO;\par
+\par
+\cf2 namespace\cf0  ConsoleApplication1\par
+\{\par
+    \cf2 class\cf0  \cf3 Program\cf0\par
+    \{\par
+        \cf2 static\cf0  \cf2 void\cf0  Main(\cf2 string\cf0 [] args)\par
+        \{\par
+            \cf3 FileInfo\cf0  f = \cf2 new\cf0  \cf3 FileInfo\cf0 (\cf4 "/home/students/abc.txt"\cf0 );\par
+            \cf3 Console\cf0 .WriteLine(\cf4 "\\nSize of a file: "\cf0  + f.Length.ToString());\par
+\par
+        \}\par
+    \}\par
+\}\par
+\par
+\par
+\cf1 /*\cf0\par
+\cf1 28. Write a C# program to convert a hexadecimal number to decimal number.\cf0\par
+\cf1 Sample Output:\cf0\par
+\cf1 Hexadecimal number: 4B0\cf0\par
+\cf1 Convert to Decimal number: 1200\cf0\par
+\cf1 */\cf0\par
+\cf2 using\cf0  System;\par
+\cf2 using\cf0  System.Collections.Generic;\par
+\cf2 using\cf0  System.Linq;\par
+\cf2 using\cf0  System.Text;\par
+\par
+\cf2 namespace\cf0  ConsoleApplication1\par
+\{\par
+    \cf2 class\cf0  \cf3 Program\cf0\par
+    \{\par
+        \cf2 static\cf0  \cf2 void\cf0  Main(\cf2 string\cf0 [] args)\par
+        \{\par
+            \cf2 string\cf0  hexval = \cf4 "4B0"\cf0 ;\par
+            \cf3 Console\cf0 .WriteLine(\cf4 "Hexadecimal number: "\cf0  + hexval);\par
+            \cf2 int\cf0  decValue = \cf2 int\cf0 .Parse(hexval, System.Globalization.\cf3 NumberStyles\cf0 .HexNumber);\par
+            \cf3 Console\cf0 .WriteLine(\cf4 "Convert to-"\cf0 );\par
+            \cf3 Console\cf0 .WriteLine(\cf4 "Decimal number: "\cf0  + decValue);\par
+        \}\par
+    \}\par
+\}\par
+\par
+\cf1 /*\cf0\par
+\cf1 29. Write a C# program to multiply corresponding elements of two arrays of integers.\cf0\par
+\cf1 Sample Output:\cf0\par
+\cf1 Array1: [1, 3, -5, 4]\cf0\par
+\cf1 Array2: [1, 4, -5, -2]\cf0\par
+\cf1 Multiply corresponding elements of two arrays:\cf0\par
+\cf1 1 12 25 -8\cf0\par
+\cf1 */\cf0\par
+\cf2 using\cf0  System;\par
+\cf2 using\cf0  System.Collections.Generic;\par
+\cf1 //using System.Linq;\cf0\par
+\cf1 //using System.Text;\cf0\par
+\par
+\par
+\cf2 namespace\cf0  ConsoleApplication1\par
+\{\par
+    \cf2 class\cf0  \cf3 Program\cf0\par
+    \{\par
+        \cf2 static\cf0  \cf2 void\cf0  Main(\cf2 string\cf0 [] args)\par
+        \{\par
+            \cf2 int\cf0 [] first_array = \{1, 3, -5, 4\};\par
+            \cf2 int\cf0 [] second_array = \{1, 4, -5, -2\};\par
+\par
+            \cf3 Console\cf0 .WriteLine(\cf4 "\\nArray1: [\{0\}]"\cf0 ,\cf2 string\cf0 .Join(\cf4 ","\cf0 ,first_array));\par
+            \cf3 Console\cf0 .WriteLine(\cf4 "Array2: [\{0\}]"\cf0 , \cf2 string\cf0 .Join(\cf4 ", "\cf0 , second_array));\par
+\par
+            \cf3 Console\cf0 .WriteLine(\cf4 "\\nMultiply corresponding elements of two arrays: "\cf0 );\par
+\par
+            \cf2 for\cf0  (\cf2 int\cf0  i = 0; i < first_array.Length; i++)\par
+            \{\par
+\par
+                \cf3 Console\cf0 .Write(first_array[i] * second_array[i]+\cf4 " "\cf0 );\par
+            \}\par
+\par
+            \cf3 Console\cf0 .WriteLine(\cf4 "\\n"\cf0 );\par
+        \}\par
+    \}\par
+\}\par
+\par
+\cf1 /*\cf0\par
+\cf1 30. Write a C# program to create a new string of four copies, taking last four characters from a \cf0\par
+\cf1 given string. If the length of the given string is less than 4 return the original one.\cf0\par
+\cf1 Sample Output:\cf0\par
+\cf1 Input a string : The quick brown fox jumps over the lazy dog.\cf0\par
+\cf1 dog.dog.dog.dog.\cf0\par
+\par
+\cf1 */\cf0\par
+\par
+\cf2 using\cf0  System;\par
+\cf2 using\cf0  System.Collections.Generic;\par
+\cf2 using\cf0  System.Linq;\par
+\cf2 using\cf0  System.Text;\par
+\par
+\par
+\cf2 namespace\cf0  ConsoleApplication1\par
+\{\par
+    \cf2 class\cf0  \cf3 Program\cf0\par
+    \{\par
+        \cf2 static\cf0  \cf2 void\cf0  Main(\cf2 string\cf0 [] args)\par
+        \{\par
+            \cf2 string\cf0  str;\par
+            \cf2 int\cf0  l = 0;\par
+            \cf3 Console\cf0 .Write(\cf4 "Input a string : "\cf0 );\par
+            str = \cf3 Console\cf0 .ReadLine();\par
+            \cf2 if\cf0  (str.Length > 4)\par
+            \{\par
+                \cf3 Console\cf0 .WriteLine(str.Length < 4 ? str + str + str : str.Substring(str.Length - 4) + str.Substring(str.Length - 4) + str.Substring(str.Length - 4) + str.Substring(str.Length - 4));\par
+            \}\par
+\par
+        \}\par
+    \}\par
+\}\par
+\par
+
+\pard\widctlpar\f1\par
+
+\pard\cf1\f0 /*\cf0\par
+\cf1 31. Write a C# program to check if a given positive number is a multiple of 3 or a multiple of 7. \cf0\par
+\cf1 Sample Output:\cf0\par
+\cf1 Input first integer:\cf0\par
+\cf1 15 \cf0\par
+\cf1 True\cf0\par
+\cf1 */\cf0\par
+\par
+\cf2 using\cf0  System;\par
+\cf2 using\cf0  System.Collections.Generic;\par
+\cf2 using\cf0  System.Linq;\par
+\cf2 using\cf0  System.Text;\par
+\par
+\par
+\cf2 namespace\cf0  ConsoleApplication1\par
+\{\par
+    \cf2 class\cf0  \cf3 Program\cf0\par
+    \{\par
+        \cf2 static\cf0  \cf2 void\cf0  Main(\cf2 string\cf0 [] args)\par
+        \{\par
+            \cf3 Console\cf0 .WriteLine(\cf4 "\\nInput first integer:"\cf0 );\par
+            \cf2 int\cf0  x = \cf3 Convert\cf0 .ToInt32(\cf3 Console\cf0 .ReadLine());\par
+            \cf2 if\cf0  (x > 0)\par
+            \{\par
+                \cf3 Console\cf0 .WriteLine(x % 3 == 0 || x % 7 == 0);\par
+            \}\par
+  \par
+        \}\par
+    \}\par
+\}\par
+\par
+
+\pard\widctlpar\f1\par
+
+\pard\nowidctlpar\sa200\sl276\slmult1\cf1\f0\lang9 /*\cf0\par
+\cf1 32. Write a C# program to check if a string starts with a specified word.\cf0\par
+\cf1 Note: Suppose the sentence starts with "Hello"\cf0\par
+\cf1 Sample Data: string1 = "Hello how are you?"\cf0\par
+\cf1 Result: Hello.\cf0\par
+\cf1 Sample Output:\cf0\par
+\cf1 Input a string : Hello how are you? \cf0\par
+\cf1 True\cf0\par
+\cf1 */\cf0\par
+\cf2 using\cf0  System;\par
+\cf2 using\cf0  System.Collections.Generic;\par
+\cf2 using\cf0  System.Linq;\par
+\cf2 using\cf0  System.Text;\par
+\cf2 namespace\cf0  ConsoleApplication1\par
+\{\par
+    \cf2 class\cf0  \cf3 Program\cf0\par
+    \{\par
+        \cf2 static\cf0  \cf2 void\cf0  Main(\cf2 string\cf0 [] args)\par
+        \{\par
+            \cf2 string\cf0  str;\par
+            \cf3 Console\cf0 .Write(\cf4 "Input a string : "\cf0 );\par
+            str = \cf3 Console\cf0 .ReadLine();\par
+            \cf3 Console\cf0 .WriteLine((str.Length < 6 && str.Equals(\cf4 "Hello"\cf0 )) || (str.StartsWith(\cf4 "Hello"\cf0 ) && str[5] == \cf4 ' '\cf0 ));\par
+    \par
+        \}\par
+    \}\par
+\}\par
+\cf1 /*\cf0\par
+\cf1 33. Write a C# program to check two given numbers where one is less than 100 and other is \cf0\par
+\cf1 greater than 200.\cf0\par
+\cf1 Sample Output:\cf0\par
+\cf1 Input a first number(<100): 75 \cf0\par
+\cf1 Input a second number(>200): 250\cf0\par
+\cf1 True\cf0\par
+\cf1 */\cf0\par
+\cf2 using\cf0  System;\par
+\cf2 using\cf0  System.Collections.Generic;\par
+\cf2 using\cf0  System.Linq;\par
+\cf2 using\cf0  System.Text;\par
+\cf2 namespace\cf0  ConsoleApplication1\par
+\{\par
+    \cf2 class\cf0  \cf3 Program\cf0\par
+    \{\par
+        \cf2 static\cf0  \cf2 void\cf0  Main(\cf2 string\cf0 [] args)\par
+        \{\par
+          \cf3 Console\cf0 .Write(\cf4 "Input a first number(<100): "\cf0 );\par
+            \cf2 int\cf0  m = \cf3 Convert\cf0 .ToInt32(\cf3 Console\cf0 .ReadLine());\par
+            \cf3 Console\cf0 .Write(\cf4 "Input a second number(>200): "\cf0 );\par
+            \cf2 int\cf0  n = \cf3 Convert\cf0 .ToInt32(\cf3 Console\cf0 .ReadLine());\par
+            \cf3 Console\cf0 .WriteLine((m < 100 && n > 200));\par
+        \}\par
+    \}\par
+\}\par
+\cf1 /*\cf0\par
+\cf1 34. Write a C# program to check if an integer (from the two given integers) is in the range -10 to \cf0\par
+\cf1 10.\cf0\par
+\cf1 Sample Output:\cf0\par
+\cf1 Input a first number: -5\cf0\par
+\cf1 Input a second number: 8 \cf0\par
+\cf1 True\cf0\par
+\cf1 */\cf0\par
+\cf2 using\cf0  System;\par
+\cf2 using\cf0  System.Collections.Generic;\par
+\cf2 using\cf0  System.Linq;\par
+\cf2 using\cf0  System.Text;\par
+\cf2 namespace\cf0  ConsoleApplication1\par
+\{\par
+    \cf2 class\cf0  \cf3 Program\cf0\par
+    \{\par
+        \cf2 static\cf0  \cf2 void\cf0  Main(\cf2 string\cf0 [] args)\par
+        \{\par
+            \cf3 Console\cf0 .Write(\cf4 "Input a first number: "\cf0 );\par
+            \cf2 int\cf0  m = \cf3 Convert\cf0 .ToInt32(\cf3 Console\cf0 .ReadLine());\par
+            \cf3 Console\cf0 .Write(\cf4 "Input a second number: "\cf0 );\par
+            \cf2 int\cf0  n = \cf3 Convert\cf0 .ToInt32(\cf3 Console\cf0 .ReadLine());\par
+            \cf3 Console\cf0 .WriteLine(((m >= -10 && m <= 10)) || ((n >= -10 && n <= 10)));\par
+        \}\par
+    \}\par
+\}\par
+\cf1 /*\cf0\par
+\cf1 35. Write a C# program to check if "HP" appears at second position in a string and returns the \cf0\par
+\cf1 string without "HP".\cf0\par
+\cf1 Test Data: PHP Tutorial\cf0\par
+\cf1 Sample Output:\cf0\par
+\cf1 P Tutorial\cf0\par
+\cf1 */\cf0\par
+\cf2 using\cf0  System;\par
+\cf2 using\cf0  System.Collections.Generic;\par
+\cf2 using\cf0  System.Linq;\par
+\cf2 using\cf0  System.Text;\par
+\cf2 namespace\cf0  ConsoleApplication1\par
+\{\par
+    \cf2 class\cf0  \cf3 Program\cf0\par
+    \{\par
+        \cf2 static\cf0  \cf2 void\cf0  Main(\cf2 string\cf0 [] args)\par
+        \{\par
+            \cf2 string\cf0  str = \cf4 "PHP Tutorial"\cf0 ;\par
+            \cf3 Console\cf0 .WriteLine((str.Substring(1, 2).Equals(\cf4 "HP"\cf0 ) ? str.Remove(1, 2) : str));\par
+        \}\par
+    \}\par
+\}\par
+\cf1 /*\cf0\par
+\cf1 36. Write a C# program to find the largest and lowest values from three integer values.\cf0\par
+\cf1 Test Data:\cf0\par
+\cf1 Input first integer:\cf0\par
+\cf1 15 \cf0\par
+\cf1 Input second integer:\cf0\par
+\cf1 25 \cf0\par
+\cf1 Input third integer: \cf0\par
+\cf1 30\cf0\par
+\cf1 Sample Output\cf0\par
+\cf1 Largest of three: 30 \cf0\par
+\cf1 Lowest of three: 15\cf0\par
+\cf1 */\cf0\par
+\cf2 using\cf0  System;\par
+\cf2 using\cf0  System.Collections.Generic;\par
+\cf2 using\cf0  System.Linq;\par
+\cf2 using\cf0  System.Text;\par
+\cf2 namespace\cf0  ConsoleApplication1\par
+\{\par
+    \cf2 class\cf0  \cf3 Program\cf0\par
+    \{\par
+        \cf2 static\cf0  \cf2 void\cf0  Main(\cf2 string\cf0 [] args)\par
+        \{\par
+            \cf3 Console\cf0 .WriteLine(\cf4 "\\nInput first integer:"\cf0 );\par
+            \cf2 int\cf0  x = \cf3 Convert\cf0 .ToInt32(\cf3 Console\cf0 .ReadLine());\par
+            \cf3 Console\cf0 .WriteLine(\cf4 "Input second integer:"\cf0 );\par
+            \cf2 int\cf0  y = \cf3 Convert\cf0 .ToInt32(\cf3 Console\cf0 .ReadLine());\par
+            \cf3 Console\cf0 .WriteLine(\cf4 "Input third integer:"\cf0 );\par
+            \cf2 int\cf0  z = \cf3 Convert\cf0 .ToInt32(\cf3 Console\cf0 .ReadLine());\par
+\par
+            \cf3 Console\cf0 .WriteLine(\cf4 "Largest of three: "\cf0  + \cf3 Math\cf0 .Max(x, \cf3 Math\cf0 .Max(y, z)));\par
+            \cf3 Console\cf0 .WriteLine(\cf4 "Lowest of three: "\cf0  + \cf3 Math\cf0 .Min(x, \cf3 Math\cf0 .Min(y, z)));\par
+\par
+        \}\par
+    \}\par
+\}\par
+\cf1 /*\cf0\par
+\cf1 37. Write a C# program to check the nearest value of 20 of two given integers and return 0 if two \cf0\par
+\cf1 numbers are same.\cf0\par
+\cf1 Test Data:\cf0\par
+\cf1 Input first integer:\cf0\par
+\cf1 15 \cf0\par
+\cf1 Input second integer:\cf0\par
+\cf1 12 \cf0\par
+\cf1 Sample Output\cf0\par
+\cf1 15\cf0\par
+\cf1 */\cf0\par
+\cf2 using\cf0  System;\par
+\cf2 using\cf0  System.Collections.Generic;\par
+\cf2 using\cf0  System.Linq;\par
+\cf2 using\cf0  System.Text;\par
+\cf2 namespace\cf0  ConsoleApplication1\par
+\{\par
+    \cf2 class\cf0  \cf3 Program\cf0\par
+    \{\par
+        \cf2 static\cf0  \cf2 void\cf0  Main(\cf2 string\cf0 [] args)\par
+        \{\par
+            \cf3 Console\cf0 .WriteLine(\cf4 "\\nInput first integer:"\cf0 );\par
+            \cf2 int\cf0  x = \cf3 Convert\cf0 .ToInt32(\cf3 Console\cf0 .ReadLine());\par
+            \cf3 Console\cf0 .WriteLine(\cf4 "Input second integer:"\cf0 );\par
+            \cf2 int\cf0  y = \cf3 Convert\cf0 .ToInt32(\cf3 Console\cf0 .ReadLine());\par
+            \cf2 int\cf0  n = 20;\par
+            \cf2 var\cf0  val1 = \cf3 Math\cf0 .Abs(x - n);\par
+            \cf2 var\cf0  val2 = \cf3 Math\cf0 .Abs(y - n);\par
+            \cf3 Console\cf0 .WriteLine(val1 == val2 ? 0 : (val1 < val2 ? x : y)); \par
+        \}\par
+    \}\par
+\}\par
+\cf1 /*\cf0\par
+\cf1 38.) Write a C# program to count a specified number in a given array of integers. \cf0\par
+\cf1  Test Data: Input an integer: 5 \cf0\par
+\cf1 Sample Output Number of 5 present in the said array: 2\cf0\par
+\cf1 */\cf0\par
+\cf2 using\cf0  System;\par
+\cf2 using\cf0  System.Collections.Generic;\par
+\cf2 using\cf0  System.Linq;\par
+\cf2 using\cf0  System.Text;\par
+\cf2 namespace\cf0  ConsoleApplication1\par
+\{\par
+    \cf2 class\cf0  \cf3 Program\cf0\par
+    \{\par
+        \cf2 static\cf0  \cf2 void\cf0  Main(\cf2 string\cf0 [] args)\par
+        \{\par
+            \cf3 Console\cf0 .WriteLine(\cf4 "\\nInput an integer:"\cf0 );\par
+            \cf2 int\cf0  x = \cf3 Convert\cf0 .ToInt32(\cf3 Console\cf0 .ReadLine());\par
+            \cf2 int\cf0 [] nums = \{1, 2, 2, 3, 3, 4, 5, 6, 5, 7, 7, 7, 8, 8, 9\};\par
+            \cf3 Console\cf0 .WriteLine(\cf4 "Number of "\cf0  + x + \cf4 " present in the said array:"\cf0 );\par
+            \cf3 Console\cf0 .WriteLine(nums.Count(n => n == x));\par
+        \}\par
+    \}\par
+\}\par
+\cf1 /*\cf0\par
+\cf1 39.) . Write a C# program to check if a number appears as either the first or last element of an array\cf0\par
+\cf1 of integers and the length is 1 or more. \cf0\par
+\cf1  Test Data: Input an integer: 25\cf0\par
+\cf1  Sample Output False\cf0\par
+\cf1 */\cf0\par
+\cf2 using\cf0  System;\par
+\cf2 using\cf0  System.Collections.Generic;\par
+\cf2 using\cf0  System.Linq;\par
+\cf2 using\cf0  System.Text;\par
+\cf2 namespace\cf0  ConsoleApplication1\par
+\{\par
+    \cf2 class\cf0  \cf3 Program\cf0\par
+    \{\par
+        \cf2 static\cf0  \cf2 void\cf0  Main(\cf2 string\cf0 [] args)\par
+        \{\par
+            \cf1 // Declare the array of two elements.\cf0\par
+            \cf2 int\cf0 [][] arr = \cf2 new\cf0  \cf2 int\cf0 [2][];\par
+\par
+            \cf1 // Initialize the elements.\cf0\par
+            arr[0] = \cf2 new\cf0  \cf2 int\cf0 [5] \{ 1, 3, 5, 7, 9 \};\par
+            arr[1] = \cf2 new\cf0  \cf2 int\cf0 [4] \{ 2, 4, 6, 8 \};\par
+\par
+            \cf1 // Display the array elements.\cf0\par
+            \cf2 for\cf0  (\cf2 int\cf0  i = 0; i < arr.Length; i++)\par
+            \{\par
+                System.\cf3 Console\cf0 .Write(\cf4 "Element(\{0\}): "\cf0 , i);\par
+\par
+            \cf2 for\cf0  (\cf2 int\cf0  j = 0; j < arr[i].Length; j++)\par
+            \{\par
+            System.\cf3 Console\cf0 .Write(\cf4 "\{0\}\{1\}"\cf0 , arr[i][j], j == (arr[i].Length - 1) ? \cf4 " "\cf0  : \cf4 " "\cf0 );\par
+            \}\par
+            System.\cf3 Console\cf0 .WriteLine();\par
+            \}\par
+            \cf1 // Keep the console window open in debug mode.\cf0\par
+            System.\cf3 Console\cf0 .WriteLine(\cf4 "Press any key to exit."\cf0 );\par
+            System.\cf3 Console\cf0 .ReadKey();\par
+        \}\par
+    \}\par
+\}\par
+\cf1 /*\cf0\par
+\cf1 40.) Write a C# program to compute the sum of all the elements of an array of integers. \cf0\par
+\cf1 Test Data:Array1: [1, 2, 2, 3, 3, 4, 5, 6, 5, 7, 7, 7, 8, 8, 1] \cf0\par
+\cf1 Sample Output Sum: 69\cf0\par
+\cf1  */\cf0\par
+\cf2 using\cf0  System;\par
+\cf2 using\cf0  System.Collections.Generic;\par
+\cf2 using\cf0  System.Linq;\par
+\cf2 using\cf0  System.Text;\par
+\cf2 namespace\cf0  ConsoleApplication1\par
+\{\par
+    \cf2 class\cf0  \cf3 Program\cf0\par
+    \{\par
+        \cf2 static\cf0  \cf2 void\cf0  Main(\cf2 string\cf0 [] args)\par
+        \{\par
+         \cf2 int\cf0 [] arr = \cf2 new\cf0  \cf2 int\cf0 [100];\par
+         \cf2 int\cf0  i, num, sum = 0;\par
+\par
+        \cf1 ////Reads size and elements in array\cf0\par
+        \cf3 Console\cf0 .WriteLine(\cf4 "Enter size of the array:"\cf0 );\par
+        num = \cf3 Convert\cf0 .ToInt32(\cf3 Console\cf0 .ReadLine());\par
+        \cf3 Console\cf0 .WriteLine(\cf4 "Enter "\cf0 +num+\cf4 " elements in the array: "\cf0 );\par
+\par
+        \cf2 for\cf0 (i=0; i<num; i++)\par
+        \{\par
+            arr[i] = \cf3 Convert\cf0 .ToInt32(\cf3 Console\cf0 .ReadLine());\par
+        \}\par
+\par
+        \cf1 //Adding all elements\cf0\par
+        \cf2 for\cf0 (i=0; i<num; i++)\par
+        \{\par
+            sum = sum + arr[i]; \cf1 // Calculating sum\cf0\par
+        \}\par
+        \}\par
+    \}\par
+\}\par
+\cf1 /*\cf0\par
+\cf1 41.) Write a C# program to check if the first element or the last element of the two arrays ( length 1\cf0\par
+\cf1 or more) are equal.\cf0\par
+\cf1 Test Data: Array1: [1, 2, 2, 3, 3, 4, 5, 6, 5, 7, 7, 7, 8, 8, 1] \cf0\par
+\cf1            Array2: [1, 2, 2, 3, 3, 4, 5, 6, 5, 7, 7, 7, 8, 8, 5] \cf0\par
+\cf1             Check if the first element or the last element of the two arrays ( length 1 or more) are equal. \cf0\par
+\cf1 Sample Output True \cf0\par
+\cf1  */\cf0\par
+\cf2 using\cf0  System;\par
+\cf2 using\cf0  System.Collections.Generic;\par
+\cf2 using\cf0  System.Linq;\par
+\cf2 using\cf0  System.Text;\par
+\cf2 using\cf0  System.Threading.Tasks;\par
+\par
+\cf2 namespace\cf0  ConsoleApplication1\par
+\{\par
+    \cf2 class\cf0  \cf3 Program\cf0\par
+    \{\par
+        \cf2 static\cf0  \cf2 void\cf0  Main(\cf2 string\cf0 [] args)\par
+        \{\par
+           \cf2 int\cf0 [] nums1 = \{1, 2, 2, 3, 3, 4, 5, 6, 5, 7, 7, 7, 8, 8, 1\};\par
+           \cf3 Console\cf0 .WriteLine(\cf4 "\\nArray1: [\{0\}]"\cf0 , \cf2 string\cf0 .Join(\cf4 ","\cf0 , nums1));\par
+           \cf2 int\cf0 [] nums2 = \{1, 2, 2, 3, 3, 4, 5, 6, 5, 7, 7, 7, 8, 8, 5\};\par
+           \cf3 Console\cf0 .WriteLine(\cf4 "\\nArray2: [\{0\}]"\cf0 , \cf2 string\cf0 .Join(\cf4 ", "\cf0 , nums2));\par
+\par
+           \cf3 Console\cf0 .WriteLine(\cf4 "\\nCheck if the first element or the last element of the two arrays (length 1 or more) are equal."\cf0 );\par
+           \cf3 Console\cf0 .WriteLine((nums1[0].Equals(nums2[0])) || (nums1[nums1.Length -1].Equals(nums2[nums2.Length - 1])));\par
+\par
+           \par
+            \cf3 Console\cf0 .WriteLine(\cf4 "Sum of all elements of array:\{0\}+\{0\} "\cf0 ,nums1,nums2);\par
+\par
+            \cf3 Console\cf0 .ReadLine();\par
+          \}\par
+       \}\par
+\}\par
+\cf1 /*\cf0\par
+\cf1  42.) Write a C# program to rotate an array (length 3) of integers in left direction. \cf0\par
+\cf1 Test Data: Array1:[1, 2, 8] \cf0\par
+\cf1 After rotating array becomes: [2, 8, 1] \cf0\par
+\cf1  */\cf0\par
+\cf2 using\cf0  System;\par
+\cf2 using\cf0  System.Collections.Generic;\par
+\cf2 using\cf0  System.Linq;\par
+\cf2 using\cf0  System.Text;\par
+\cf2 using\cf0  System.Threading.Tasks;\par
+\par
+\cf2 namespace\cf0  ConsoleApplication1\par
+\{\par
+    \cf2 class\cf0  \cf3 Program\cf0\par
+    \{\par
+        \cf2 static\cf0  \cf2 void\cf0  Main(\cf2 string\cf0 [] args)\par
+        \{\par
+           \cf2 int\cf0 [] nums = \{1, 2, 8\};\par
+            \cf3 Console\cf0 .WriteLine(\cf4 "\\nArray1: [\{0\}]"\cf0 ,\cf2 string\cf0 .Join(\cf4 ","\cf0 ,nums));\par
+            \cf2 var\cf0  temp = nums[0];\par
+            \cf2 for\cf0  (\cf2 var\cf0  i = 0; i < nums.Length - 1; i++)\par
+            \{\par
+            nums[i] = nums[i + 1];\par
+            \}\par
+            nums[nums.Length - 1] = temp;\par
+            \cf3 Console\cf0 .WriteLine(\cf4 "\\nAfter rotating array becomes: [\{0\}]"\cf0 , \cf2 string\cf0 .Join(\cf4 ","\cf0 , nums));          \}\par
+       \}\par
+\}\par
+\par
+\ul\b\f3\lang1033 program:44\ulnone\b0\f0\lang9   \par
+\cf2 using\cf0  System;\par
+\cf2 using\cf0  System.Collections.Generic;\par
+\cf2 using\cf0  System.Linq;\par
+\cf2 using\cf0  System.Text;\par
+\cf2 using\cf0  System.Threading.Tasks;\par
+\par
+\cf2 namespace\cf0  ConsoleApplication1\par
+\{\par
+    \cf2 class\cf0  \cf3 Program\cf0\par
+    \{\par
+        \cf2 static\cf0  \cf2 void\cf0  Main(\cf2 string\cf0 [] args)\par
+        \{\par
+           \cf2 int\cf0 [] array1 = \{1, 2, 5\};\par
+            \cf3 Console\cf0 .WriteLine(\cf4 "nArray1: [\{0\}]"\cf0 , \cf2 string\cf0 .Join(\cf4 ", "\cf0 , array1));\par
+            \cf2 int\cf0 [] array2 = \{0, 3, 8\};\par
+            \cf3 Console\cf0 .WriteLine(\cf4 "\\nArray2: [\{0\}]"\cf0 , \cf2 string\cf0 .Join(\cf4 ", "\cf0 , array2));\par
+            \cf2 int\cf0 [] array3 = \{-1, 0, 2\};\par
+            \cf3 Console\cf0 .WriteLine(\cf4 "\\nArray3: [\{0\}]"\cf0 , \cf2 string\cf0 .Join(\cf4 ", "\cf0 , array3));\par
+            \cf2 int\cf0 [] new_array = \{ array1[1], array2[1], array3[1] \};\par
+            \cf3 Console\cf0 .WriteLine(\cf4 "\\nNew array: [\{0\}]"\cf0 , \cf2 string\cf0 .Join(\cf4 ", "\cf0 , new_array));\par
+        \}\par
+\par
+    \}\par
+\}\par
+\ul\b\f3\lang1033 program:45\ulnone\b0\f0\lang9\par
+\cf2 using\cf0  System;\par
+\cf2 using\cf0  System.Collections.Generic;\par
+\cf2 using\cf0  System.Linq;\par
+\cf2 using\cf0  System.Text;\par
+\cf2 using\cf0  System.Threading.Tasks;\par
+\par
+\cf2 namespace\cf0  ConsoleApplication1\par
+\{\par
+    \cf2 class\cf0  \cf3 Program\cf0\par
+    \{\par
+        \cf1 // Function to find the element\cf0\par
+        \cf1 // occurring odd number of times\cf0\par
+        \cf2 static\cf0  \cf2 int\cf0  getOddOccurrence(\cf2 int\cf0 [] arr, \cf2 int\cf0  arr_size)\par
+        \{\par
+        \cf2 for\cf0  (\cf2 int\cf0  i = 0; i < arr_size; i++) \{\par
+        \cf2 int\cf0  count = 0;\par
+\par
+        \cf2 for\cf0  (\cf2 int\cf0  j = 0; j < arr_size; j++) \{\par
+\par
+        \cf2 if\cf0  (arr[i] == arr[j])\par
+        count++;\par
+        \}\par
+        \cf2 if\cf0  (count % 2 != 0)\par
+        \cf2 return\cf0  arr[i];\par
+        \}\par
+        \cf2 return\cf0  -1;\par
+        \}\par
+\par
+        \cf1 // Driver code\cf0\par
+        \cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  Main()\par
+        \{\par
+            \cf2 int\cf0 [] arr = \{ 2, 3, 5, 4, 5, 2, 4, 3, 5, 2, 4, 4, 2 \};\par
+            \cf2 int\cf0  n = arr.Length;\par
+            \cf3 Console\cf0 .Write(getOddOccurrence(arr, n));\par
+        \}\par
+\par
+    \}\par
+\}\par
+\par
+\par
+      \par
+\fs19\par
+        \par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\fs24\par
+\par
+\par
+\f2\par
+}
+ 
